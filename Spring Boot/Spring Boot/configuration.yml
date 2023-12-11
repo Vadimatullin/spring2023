@@ -1,0 +1,18 @@
+server:
+  port: 8080
+database:
+  username: $(USER)
+  password: $(PASSWORD)
+
+---
+spring:
+  profiles: test
+database:
+  username: Vadim
+  password: 123
+---
+spring:
+  profiles: dev
+database:
+    username: Artem
+    password: 123
